@@ -4,6 +4,7 @@ import AppContent from './components/AppContent';
 import AppHeader from './components/AppHeader';
 import PageTitle from './components/PageTitle';
 import styles from './styles/modules/app.module.scss';
+import Name from './components/Name'; // this was added
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <AppContent />
         </div>
       </div>
+      {/* this was added */}
+      <Name />
       <Toaster
         position="bottom-right"
         toastOptions={{

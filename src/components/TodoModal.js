@@ -34,6 +34,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [status, setStatus] = useState('incomplete');
+  const [description, setDescription] = useState(''); // this is added
 
   useEffect(() => {
     if (type === 'update' && todo) {
@@ -57,6 +58,7 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
           addTodo({
             id: uuid(),
             title,
+            description, // this was added
             status,
             time: format(new Date(), 'p, MM/dd/yyyy'),
           })
@@ -65,7 +67,8 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
       }
       if (type === 'update') {
         if (todo.title !== title || todo.status !== status) {
-          dispatch(updateTodo({ ...todo, title, status }));
+          // this was added
+          dispatch(updateTodo({ ...todo, title, description, status }));
           toast.success('Task Updated successfully');
         } else {
           toast.error('No changes made');
@@ -117,6 +120,15 @@ function TodoModal({ type, modalOpen, setModalOpen, todo }) {
                   id="title"
                   value={title}
                   onChange={(e) => setTitle(e.target.value)}
+                />
+              </label>
+              {/* this was added */}
+              <label htmlFor="description">
+                Description
+                <input
+                  id="description"
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
                 />
               </label>
               <label htmlFor="type">

@@ -6,14 +6,14 @@
 	padding: 0;
 }
 :root {
-	--primaryPurple: #646ff0;
-	--black-1: #646681;
-	--black-2: #585858;
-	--bg-1: #f8f8ff;
-	--bg-2: #ecedf6;
-	--bg-3: #cccdde;
+	--primaryPurple: #fea3b7;
+	--black-1: #af6e86;
+	--black-2: #6a262c;
+	--bg-1: #fff8fb;
+	--bg-2: #f6ecee;
+	--bg-3: #deccd4;
 	--gray-1: #eee;
-	--gray-2: #dedfe1;
+	--gray-2: #e1dedf;
 	--black: black;
 	--white: white;
 }
