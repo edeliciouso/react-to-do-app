@@ -1,0 +1,16 @@
+.profile-object {
+  padding-top: 20px;
+  padding-right: 20px;
+  text-align: right;
+}
+.circle-profile {
+  width: 80px;
+  height: 80px;
+  background-color: #fea3b7;
+  border-radius: 50%;
+}
+.circle-profile-text {
+  padding-top: 80px;
+  text-align: center;
+  font-size: 15px;
+}

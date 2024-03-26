@@ -10,24 +10,36 @@
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
+  padding-left: 100px;
   color: var(--black-1);
   @include smallDeviceSize {
     font-size: 3rem;
   }
 }
 
-.titleName {
+.titleSmall {
   display: inline-block;
   width: 100%;
   font-family: "Poppins";
-  font-size: 17px;
-  font-weight: 590;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
   color: var(--black-1);
   @include smallDeviceSize {
-    font-size: 3rem;
+    font-size: 1rem;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.containerChild {
+  display: none;
+  width: 100%;
 }
