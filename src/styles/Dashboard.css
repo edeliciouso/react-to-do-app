@@ -9,8 +9,9 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-color: #eee;
     padding: 30px;
+    border-radius: 10%;
   }
   .dashboard__btn {
     padding: 10px;
@@ -18,8 +19,23 @@
     margin-top: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #fea3b7;
   }
   .dashboard div {
-    margin-top: 7px;
+    margin-top: 5px;
+  }
+  .profile-object-dashboard{
+    padding-bottom: 40px;
+    padding-left: 20px;
+  }
+  .profile-circle-dashboard{
+    width: 100px;
+    height: 100px;
+    background-color: #fea3b7;
+    border-radius: 50%;
+  }
+  .profile-circle-text-dashboard{
+    padding-top: 103px;
+    text-align: center;
+    font-size: 15px;
   }

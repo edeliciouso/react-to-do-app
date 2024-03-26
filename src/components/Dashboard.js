@@ -30,6 +30,11 @@ function Dashboard() {
   return (
     <div className="dashboard">
       <div className="dashboard__container">
+        <div className="profile-object-dashboard">
+          <div className="profile-circle-dashboard">
+            <p className="profile-circle-text-dashboard">Profile Page</p>
+          </div>
+        </div>
         Logged in as
         <div>{name}</div>
         <div>{user?.email}</div>

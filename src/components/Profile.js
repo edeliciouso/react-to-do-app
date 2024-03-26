@@ -7,7 +7,7 @@ function Profile() {
     <div className="profile-object">
       <div className="circle-profile">
         <p className="circle-profile-text">
-          <Link to="/dashboard">Profile</Link>
+          <Link to="/dashboard">Profile Page</Link>
         </p>
       </div>
     </div>
